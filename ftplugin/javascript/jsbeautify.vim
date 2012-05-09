@@ -642,5 +642,5 @@ function! g:Jsbeautify()
 	:put!0
 endfunction
 
-nnoremap <silent> <leader>ff :call g:Jsbeautify()<cr>
+nnoremap <silent> <leader>ff :let pos = getpos(".")<cr>:call g:Jsbeautify()<cr>:call setpos('.', pos)<cr>
 
