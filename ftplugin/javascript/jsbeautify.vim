@@ -642,5 +642,5 @@ function! g:Jsbeautify()
 	:put!0
 endfunction
 
-nnoremap <silent> <leader>ff :let view = winsaveview()<cr>:let pos = getpos(".")<cr>:call g:Jsbeautify()<cr>:call setpos('.', pos)<cr>:call winrestview(view)<cr>
+nnoremap <silent> <leader>ff :let view = winsaveview()<cr>:let pos = getpos(".")<cr>:call g:Jsbeautify()<cr>:call setpos('.', pos)<cr>Gdd``<cr>:call winrestview(view)<cr>
 
